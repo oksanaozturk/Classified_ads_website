@@ -82,3 +82,6 @@ class User(AbstractBaseUser)
     @property
     def is_user(self):
         return self.role == UserRoles.USER
+
+2) ДОСТАТЬ ИЗ ТАБЛИЦЫ ВСЕ ДАННЫЕ: SELECT * FROM users_user
+   УДАЛИТЬ ВСЕ ДАННЫЕ ИЗ ТАБЛИЦЫ: DELETE FROM users_user
