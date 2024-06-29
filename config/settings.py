@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_filters",
     "rest_framework_simplejwt",
-    "djoser"
+    "djoser",
 ]
 
 MIDDLEWARE = [
@@ -176,9 +176,6 @@ CORS_ALLOW_ALL_ORIGINS = False
 
 # Настройка DJOSER
 DJOSER = {
-    'SERIALIZERS': {
-        'user_create': 'users.serializers.UserRegistrationSerializer'
-    },
-    'LOGIN_FIELD': 'email'
+    "SERIALIZERS": {"user_create": "users.serializers.UserRegistrationSerializer"},
+    "LOGIN_FIELD": "email",
 }
-

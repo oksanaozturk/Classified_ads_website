@@ -1,8 +1,9 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField
-from .managers import UserManager
 from django.utils.translation import gettext_lazy as _
+from phonenumber_field.modelfields import PhoneNumberField
+
+from .managers import UserManager
 
 NULLABLE = {"blank": True, "null": True}
 
@@ -11,8 +12,9 @@ class UserRoles(models.TextChoices):
     """
     Enum-класс для пользователя.
     """
-    ADMIN = 'admin', _('admin')
-    USER = 'user', _('user')
+
+    ADMIN = "admin", _("admin")
+    USER = "user", _("user")
 
 
 class User(AbstractUser):
@@ -27,13 +29,13 @@ class User(AbstractUser):
         max_length=50,
         verbose_name="Имя Пользователя",
         help_text="Ввведите имя Пользователя",
-        **NULLABLE
+        **NULLABLE,
     )
     last_name = models.CharField(
         max_length=50,
         verbose_name="Фамилия Пользователя",
         **NULLABLE,
-        help_text="Ввведите фамилию Пользователя"
+        help_text="Ввведите фамилию Пользователя",
     )
 
     # Необходимо добавить библиотеку через команду pip install "django-phonenumber-field[phonenumberslite]"
@@ -47,7 +49,7 @@ class User(AbstractUser):
         upload_to="users_avatar",
         verbose_name="Аватар пользователя",
         help_text="Загрузите изображение",
-        **NULLABLE
+        **NULLABLE,
     )
 
     role = models.CharField(

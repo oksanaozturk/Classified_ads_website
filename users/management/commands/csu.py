@@ -11,9 +11,9 @@ class Command(BaseCommand):
         user = User.objects.create(
             email="admin1@sky.pro",
             # Поля, которые разрешат вход в Админку
-            first_name='admin_main',
-            last_name='custom',
-            role='admin',
+            first_name="admin_main",
+            last_name="custom",
+            role="admin",
             is_active=True,
         )
         # Функция set_password() нужна для кеширования пароля

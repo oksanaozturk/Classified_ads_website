@@ -20,8 +20,3 @@ class UserAdmin(admin.ModelAdmin):
     )
     list_filter = ("email",)
     search_fields = ("email", "last_name", "phone_number")
-
-
-from django.contrib import admin
-
-# Register your models here.
