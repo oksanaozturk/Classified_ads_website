@@ -1,0 +1,70 @@
+[
+  {
+    "model": "main.ad",
+    "pk": 1,
+    "fields": {
+      "image": null,
+      "title": "Компьютер недорого",
+      "price": 10000,
+      "author": 1,
+      "created_at": "2022-02-03 12:10:16.332479+03:00",
+      "description": "Компьютер недорого"
+    }
+  },
+  {
+    "model": "main.ad",
+    "pk": 2,
+    "fields": {
+      "image": null,
+      "title": "Шкаф, почти новый",
+      "price": 10000,
+      "author": 1,
+      "created_at": "2022-02-03 12:10:16.332479+03:00",
+      "description": "Покупал в шведском магазине"
+    }
+  },
+  {
+    "model": "main.ad",
+    "pk": 3,
+    "fields": {
+      "image": null,
+      "title": "Отдам даром",
+      "price": 10000,
+      "author": 1,
+      "created_at": "2022-02-03 12:10:16.332479+03:00",
+      "description": "Самовывоз за ваш счет"
+    }
+  },{
+    "model": "main.ad",
+    "pk": 4,
+    "fields": {
+      "image": null,
+      "title": "Автомобиль",
+      "price": 10000,
+      "author": 2,
+      "created_at": "2022-02-03 12:10:16.332479+03:00",
+      "description": "Салонам не звонить!"
+    }
+  },{
+    "model": "main.ad",
+    "pk": 5,
+    "fields": {
+      "image": null,
+      "title": "Кухонный гарнитур",
+      "price": 10000,
+      "author": 2,
+      "created_at": "2022-02-03 12:10:16.332479+03:00",
+      "description": "Модульный, б/у"
+    }
+  },{
+    "model": "main.ad",
+    "pk": 6,
+    "fields": {
+      "image": null,
+      "title": "Плита",
+      "price": 10000,
+      "author": 2,
+      "created_at": "2022-02-03 12:10:16.332479+03:00"
+    }
+  }
+]

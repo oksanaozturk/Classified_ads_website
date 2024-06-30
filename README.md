@@ -47,6 +47,8 @@ SECRET_KEY=
 
 5) #### Для загрузки данных из фикстур используйте команду
  - python manage.py loaddata users.json
+ - python manage.py loaddata ads.json
+ - python manage.py loaddata comments.json
 
 6) ### Команда для запуска Приложения: 
   - python manage.py runserver
