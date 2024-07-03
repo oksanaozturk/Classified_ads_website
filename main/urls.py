@@ -24,4 +24,3 @@ urlpatterns = [
     path("mylist/", MyListAPIView.as_view(), name="mylist"),
 
 ] + router.urls
-
