@@ -86,8 +86,6 @@ class CommentViewSet(ModelViewSet):
             self.permission_classes = (IsAuthenticated,)
         elif self.action in ['destroy', 'partial_update', 'update']:
             self.permission_classes = (IsAdminOrOwner,)
-        elif self.action == 'list':
-            self.permission_classes = (AllowAny,)
 
         return super().get_permissions()
 
