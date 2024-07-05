@@ -10,12 +10,12 @@ app_name = MainConfig.name
 router = SimpleRouter()
 router.register("ads", AdViewSet, basename="ads")
 """
-GET "/main/ads/" — список профилей пользователей
-POST "/main/ads/" — регистрация пользователя
+GET "/main/ads/" — список объявлений пользователей
+POST "/main/ads/" — создание нового объявления пользователя
 GET, PATCH, DELETE "/main/ads/{id}" — в соотвествии с REST и необходимыми permissions (для администратора)
 
-GET "/main/comments/" — список профилей пользователей
-POST "/main/comments/" — регистрация пользователя
+GET "/main/comments/" — список комментариев пользователей
+POST "/main/comments/" — создание нового комментария пользователя
 GET, PATCH, DELETE "/main/comments/{id}" — в соотвествии с REST и необходимыми permissions (для администратора)
 """
 router.register("comments", CommentViewSet, basename="comments")
